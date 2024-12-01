@@ -27,21 +27,21 @@ class PandasHandler:
             {
                 "ID": GovernorData.intify_value(gov_data.id),
                 "Name": gov_data.name,
+                "Alliance": gov_data.alliance.rstrip(),
                 "Power": GovernorData.intify_value(gov_data.power),
                 "Killpoints": GovernorData.intify_value(gov_data.killpoints),
-                "Deads": GovernorData.intify_value(gov_data.dead),
                 "T1 Kills": GovernorData.intify_value(gov_data.t1_kills),
                 "T2 Kills": GovernorData.intify_value(gov_data.t2_kills),
                 "T3 Kills": GovernorData.intify_value(gov_data.t3_kills),
                 "T4 Kills": GovernorData.intify_value(gov_data.t4_kills),
                 "T5 Kills": GovernorData.intify_value(gov_data.t5_kills),
-                "Total Kills": GovernorData.intify_value(gov_data.total_kills()),
-                "T45 Kills": GovernorData.intify_value(gov_data.t45_kills()),
-                "Ranged": GovernorData.intify_value(gov_data.ranged_points),
-                "Rss Gathered": GovernorData.intify_value(gov_data.rss_gathered),
+                "Deads": GovernorData.intify_value(gov_data.dead),
                 "Rss Assistance": GovernorData.intify_value(gov_data.rss_assistance),
+                "Rss Gathered": GovernorData.intify_value(gov_data.rss_gathered),
                 "Helps": GovernorData.intify_value(gov_data.helps),
-                "Alliance": gov_data.alliance.rstrip(),
+                "Ranged": GovernorData.intify_value(gov_data.ranged_points),
+                "T45 Kills": GovernorData.intify_value(gov_data.t45_kills()),
+                "Total Kills": GovernorData.intify_value(gov_data.total_kills()),
             }
         )
 

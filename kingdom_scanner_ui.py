@@ -186,7 +186,7 @@ class BasicOptionsFame(customtkinter.CTkFrame):
         )
         self.scan_uuid_label_2.grid(row=0, column=1, padx=10, pady=(5, 0), sticky="ew")
 
-        self.scan_name_label = customtkinter.CTkLabel(self, text="Scan name:", height=1)
+        self.scan_name_label = customtkinter.CTkLabel(self, text="Kingdom:", height=1)
         self.scan_name_label.grid(row=1, column=0, padx=10, pady=(5, 0), sticky="w")
         self.scan_name_text = customtkinter.CTkEntry(self)
         self.scan_name_text.grid(row=1, column=1, padx=10, pady=(5, 0), sticky="ew")
@@ -622,7 +622,7 @@ class App(customtkinter.CTk):
             )
             self.wait_window(dia)
 
-        self.title("Kingdom Scanner by Cyrexxis")
+        self.title("Kingdom Scanner by TX")
         self.geometry("800x590")
         self.grid_columnconfigure(0, weight=1)
         self.grid_columnconfigure(1, weight=2)

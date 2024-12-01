@@ -1,6 +1,6 @@
 {
   "scan": {
-    "kingdom_name": "",
+    "kingdom_name": "2012",
     "people_to_scan": "300",
     "resume": false,
     "advanced_scroll": true,
@@ -12,8 +12,8 @@
     "timings": {
       "gov_open": 1,
       "copy_wait": 0.2,
-      "kills_open": 0.2,
-      "info_open": 0.1,
+      "kills_open": 0.5,
+      "info_open": 0.5,
       "info_close": 0.1,
       "gov_close": 0.1
     },

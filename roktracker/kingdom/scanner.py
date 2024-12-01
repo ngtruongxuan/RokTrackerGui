@@ -493,7 +493,8 @@ class KingdomScanner:
         else:
             file_name_prefix = "TOP"
 
-        filename = f"{file_name_prefix}{amount - j}-{self.start_date}-{kingdom}-[{self.run_id}]"
+        # filename = f"{file_name_prefix}{amount - j}-{self.start_date}-{kingdom}-[{self.run_id}]"
+        filename = f"{file_name_prefix}{amount - j}-{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}-{kingdom}"
         data_handler = PandasHandler(self.scan_path, filename, formats)
 
         # The loop in TOP XXX Governors in kingdom - It works both for power and killpoints Rankings
