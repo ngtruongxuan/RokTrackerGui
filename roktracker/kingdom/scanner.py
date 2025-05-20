@@ -259,8 +259,10 @@ class KingdomScanner:
                     + str(self.get_gov_position(current_player, self.inactive_players)),
                 )
                 count += 1
+                if count > 2:
+                    self.adb_client.secure_adb_shell(f"input swipe 690 605 690 505")
                 time.sleep(self.timings["gov_open"] + random_delay())
-                if count == 10:
+                if count == 5:
                     cont = self.ask_continue("Could not find user, retry?")
                     if cont:
                         count = 0
